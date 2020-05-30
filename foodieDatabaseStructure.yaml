@@ -1,0 +1,45 @@
+Users:
+    type: object
+    properties:
+        - uid:
+            type: string
+            isKey: true
+        - userName:
+            type: string
+        - displayName:
+            type: string
+            maxLength: 20
+        - mailId:
+            type: string
+        - sexCode:
+            type: string
+            maxLength: 1
+        - captionText:
+            type: string
+            maxLength: 50
+        - phoneNumber:
+            type: longint
+            maxLength: 15
+        - profileImageUrl:
+            type: string
+
+Posts:
+    type: object
+    properties:
+        #Required fields
+        - pid:
+            type: string
+            isKey: true
+        - uid:
+            type: string
+        - postImageUrl:
+            type: string
+        - postCaption:
+            type: string
+            maxLength: 100
+        - postDate:
+            type: date
+        - reactCount:
+            type: int
+        - reactUid:
+            type: string
