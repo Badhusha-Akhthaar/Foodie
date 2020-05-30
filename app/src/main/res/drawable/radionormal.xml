@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="ring" android:useLevel="false">
+            <size android:height="50dp" android:width="50dp"/>
+            <solid android:color="#3bc531"></solid>
+        </shape>
+    </item>
+    <item
+        android:drawable="@drawable/ic_male_50"
+        android:width="30dp"
+        android:height="30dp"
+        android:bottom="4dp"
+        android:gravity="center"/>
+</layer-list>
