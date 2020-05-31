@@ -91,26 +91,7 @@ public class User_Dashboard extends AppCompatActivity {
                             public void onPermissionRationaleShouldBeShown(List<PermissionRequest> list, PermissionToken permissionToken) {
                                 permissionToken.continuePermissionRequest();
                             }
-                        });
-//                Dexter.withActivity(User_Dashboard.this)
-//                        .withPermissions(Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-//                        .withListener(new MultiplePermissionsListener() {
-//                            @Override
-//                            public void onPermissionsChecked(MultiplePermissionsReport report) {
-//                                if (report.areAllPermissionsGranted()) {
-//                                    showImagePickerOptions();
-//                                }
-//
-//                                if (report.isAnyPermissionPermanentlyDenied()) {
-//                                    showSettingsDialog();
-//                                }
-//                            }
-//
-//                            @Override
-//                            public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
-//                                token.continuePermissionRequest();
-//                            }
-//                        }).check();
+                        }).check();
             }
         });
         drawer.addDrawerListener(mDrawerToggle);

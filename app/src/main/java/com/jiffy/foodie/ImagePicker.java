@@ -226,7 +226,7 @@ public class ImagePicker extends AppCompatActivity {
         File path = new File(getExternalCacheDir(), "camera");
         if (!path.exists()) path.mkdirs();
         File image = new File(path, fileName);
-        return getUriForFile(ImagePicker.this, getPackageName() + ".provider", image);
+        return getUriForFile(ImagePicker.this, getPackageName() + ".fileprovider", image);
     }
 
     private static String queryName(ContentResolver resolver, Uri uri) {
