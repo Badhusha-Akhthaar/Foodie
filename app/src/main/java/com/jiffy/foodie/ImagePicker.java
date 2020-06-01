@@ -191,7 +191,7 @@ public class ImagePicker extends AppCompatActivity {
         options.setActiveControlsWidgetColor(ContextCompat.getColor(this, R.color.colorPrimary));
 
         if (lockAspectRatio)
-            options.withAspectRatio(ASPECT_RATIO_X, ASPECT_RATIO_Y);
+//            options.withAspectRatio(ASPECT_RATIO_X, ASPECT_RATIO_Y);
 
         if (setBitmapMaxWidthHeight)
             options.withMaxResultSize(bitmapMaxWidth, bitmapMaxHeight);
