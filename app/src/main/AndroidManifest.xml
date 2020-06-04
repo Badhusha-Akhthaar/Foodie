@@ -16,7 +16,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".ImagePicker"></activity>
+        <activity android:name=".EditandPost"></activity>
+        <activity android:name=".ImagePicker" />
         <activity
             android:name=".User_Dashboard"
             android:theme="@style/AppTheme.NoActionBar" /> <!-- uCrop cropping activity -->

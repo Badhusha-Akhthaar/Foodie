@@ -147,15 +147,19 @@ public class User_Dashboard extends AppCompatActivity {
         if (requestCode == REQUEST_IMAGE) {
             if (resultCode == Activity.RESULT_OK) {
                 Uri uri = data.getParcelableExtra("path");
-                try {
-                    // You can update this bitmap to your server
-                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
+                Intent postIntent = new Intent(User_Dashboard.this,EditandPost.class);
+                postIntent.putExtra("IMAGE_URI",uri.toString());
+                startActivity(postIntent);
 
-                    // loading profile image from local cache
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+//                try {
+//                    // You can update this bitmap to your server
+////                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), uri);
+//
+//                    // loading profile image from local cache
+//
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
             }
         }
     }
